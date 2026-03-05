@@ -12,7 +12,7 @@ MindBridge solves this by offering a **3-Layered Support System** where the stud
 - **The Problem:** Students need immediate, consequence-free emotional support without fear of surveillance.
 - **The Solution:** A secure chat interface powered entirely by a local Large Language Model (e.g., `gemma3:1b` via Ollama). 
 - **Privacy Guarantee:** Inference happens 100% on the student's hardware. Nothing is sent to OpenAI, Google, or any cloud API.
-- **Data Isolation:** Conversations are stored locally in an on-device SQLite database (`mindbridge_local.db`). Students can create isolated "Chat Spaces" (e.g., "Exam Stress", "Roommate Issue") to compartmentalize their concerns.
+- **Data Isolation:** Conversations are stored locally in an on-device SQLite database (`mindbridge_local.db`). Students can create isolated **"Chat Spaces"** (e.g., "Exam Stress", "Roommate Issue") to compartmentalize their concerns. Students can even **rename their Chat Spaces** on the fly to organize their thoughts.
 
 ### Layer 2: Anonymous Community
 - **The Problem:** Sometimes students just need to know they aren't alone.
@@ -26,7 +26,8 @@ MindBridge solves this by offering a **3-Layered Support System** where the stud
   1. The local AI reads the chat history and drafts a clinical, bulleted summary of their core concerns.
   2. The draft is presented on a **Review Screen** where the student can freely edit, redact, or expand on the text.
   3. Once approved, the app generates a clean PDF report stamped with a **"✅ STUDENT-VERIFIED (Stored On-Device)"** badge.
-  4. The PDF is saved directly to the user's hard drive to be emailed or handed to a professional therapist on their own terms.
+  4. The PDF is saved directly to the user's hard drive.
+  5. The student has the power and autonomy to reach out to professionals on their own time, utilizing the built-in **Therapist Directory** which provides direct contact details (phone and email) for established counselors.
 
 ## Tech Stack
 - **Frontend & Backend Logic:** Python + Streamlit 
